@@ -1,0 +1,138 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h1 {
+  text-align: center;
+}
+
+.container {
+  background-color: #444444;
+  border: #acacac solid 25px;
+  border-style: ridge;
+  width: 520px;
+  margin: auto;
+  border-radius: 0.5em;
+}
+
+.inner-glass {
+  background-color: #023ed0;
+  padding: 8px;
+  display: flex;
+  flex-wrap: wrap;
+  border-radius: 0.19em;
+  margin: 1px;
+}
+
+.number {
+  border-radius: 0.1em;
+  width: 80px;
+  height: 60px;
+  text-align: center;
+  font-size: 2.4em;
+  border: black solid 2px;
+  margin: 8px;
+  background-color: #8fa1d1;
+}
+
+.number:hover {
+  cursor: pointer;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+  pointer-events: none;
+}
+
+.clicked {
+  background-color: #00a141;
+}
+
+.wrong .number {
+  background-color: rgb(156, 1, 1);
+}
+
+/* START REACTOR */
+
+.reactor {
+  display: flex;
+  justify-content: center;
+}
+
+.reactor .panel {
+  margin: 0 0.5em;
+  border: #acacac solid 2em;
+  background-color: #acacac;
+  border-style: ridge;
+}
+
+.reactor .panel .indicator {
+  display: flex;
+  justify-content: center;
+  margin-top: 0.5em;
+}
+
+.indicator .indicator-light {
+  width: 20px;
+  height: 20px;
+  background-color: rgb(92, 92, 92);
+  margin: 0.5em;
+  border-radius: 50%;
+  border: black solid 3px;
+}
+
+.indicator .activated {
+  background-color: green;
+}
+
+.container-box {
+  width: 250px;
+  height: 250px;
+  margin: 0.5em;
+
+  display: flex;
+  flex-wrap: wrap;
+
+  cursor: pointer;
+
+  position: relative;
+}
+
+.black {
+  background-color: black;
+  border: rgba(255, 255, 255, 0.5) solid 3px;
+}
+
+.box {
+  width: 76px;
+  height: 76px;
+  margin: 3.3px;
+  pointer-events: none;
+  border-radius: 0.3em;
+}
+
+.action-box {
+  width: 72px;
+  height: 72px;
+  margin: 3.3px;
+  border: black solid 2px;
+  border-radius: 0.3em;
+  background-color: grey;
+}
+
+.flash {
+  background-color: rgb(53, 53, 255);
+}
+
+.clicktostart {
+  top: 46%;
+  left: 27%;
+
+  color: white;
+  position: absolute;
+  pointer-events: none;
+}
